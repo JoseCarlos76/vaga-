@@ -4,7 +4,7 @@ from supabase import create_client, Client
 
 
 SUPABASE_URL = "https://glgskjpjzybttiqcwymd.supabase.co"
-SUPABASE_KEY = "SUA_SUPABASE_KEY_AQUI"
+SUPABASE_KEY = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImdsZ3NranBqenlidHRpcWN3eW1kIiwicm9sZSI6ImFub24iLCJpYXQiOjE3ODE3MzYzNjIsImV4cCI6MjA5NzMxMjM2Mn0.NLugwd1aKlumNRhnXVR1FR10yQdW4shnc2iy6ko-7AA"
 
 ZAPI_INSTANCE_ID = "3F4DACCADC7313509E970252E275B4B9"
 ZAPI_INSTANCE_TOKEN = "8C38B6259728C8F4155C7D22"
@@ -25,7 +25,7 @@ def buscar_contatos():
             supabase
             .table("contatos")
             .select("name, tell")
-            .limit(3)
+            .limit(1)
             .execute()
         )
 
